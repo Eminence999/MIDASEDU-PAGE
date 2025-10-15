@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Midas Professional Computer | Exam Portal</title>
+  <link rel="icon" size= "16x16" type="image/jpg" href="LOGGO.PNG"> 
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(145deg, #06172a, #0d2852);
+      color: #e8f0ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 15px 0;
+      backdrop-filter: blur(10px);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #d0e3ff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #69a9ff;
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 12px rgba(0, 140, 255, 0.5));
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ffffff;
+      letter-spacing: 1px;
+      font-weight: 700;
+      text-shadow: 0 0 20px rgba(0, 120, 255, 0.4);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #b5cfff;
+      margin-top: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Course Container */
+    .course-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 35px;
+      width: 90%;
+      max-width: 1000px;
+      padding: 20px 0 60px 0;
+      text-decoration: none;
+    }
+
+    a {text-decoration: none;}
+
+    /* Course Box */
+    .course-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 60px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.35s ease;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    .course-box:hover {
+      transform: translateY(-10px) scale(1.03);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: #1e56a0;
+      box-shadow: 0 0 25px rgba(30, 86, 160, 0.6);
+    }
+
+    .course-box h2 {
+      color: #ffffff;
+      font-size: 2rem;
+      margin-bottom: 8px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .course-box p {
+      color: #bcd1f0;
+      font-size: 1rem;
+    }
+
+    /* Animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #9ab7e6;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      width: 100%;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.3rem;
+      }
+      header img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="home2322.html">Home</a></li>
+      <li><a href="#">Exams</a></li>
+      <li><a href="#">Results</a></li>
+      <li><a href="#">Admin</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header with Logo -->
+  <header>
+    <img src="logo.png" alt="Midas Information Technology Logo" />
+    <div>
+      <h1>MIDAS PROFESSIONAL COMPUTER</h1>
+      <p>Select your exam duration to begin</p>
+    </div>
+  </header>
+
+  <!-- Course Boxes -->
+  <div class="course-container">
+    <a href="index1.html" target='_blank'><div class="course-box">
+      <h2>1 Month</h2>
+      <p>Short intensive course</p>
+    </div></a>
+    <a href="index2.html" target='_blank'><div class="course-box">
+      <h2>2 Months</h2>
+      <p>Intermediate training program</p>
+    </div></a>
+    <a href="index3.html" target='_blank'><div class="course-box">
+      <h2>3 Months</h2>
+      <p>Comprehensive study package</p>
+    </div></a>
+    <div class="course-box" onclick="location.href='#'">
+      <h2>4 Months</h2>
+      <p>Advanced learning program</p>
+    </div>
+    <a href="index.html" target='_blank'><div class="course-box">
+      <h2>6 Months</h2>
+      <p>Professional diploma course</p>
+    </div></a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Midas Information Technology | All Rights Reserved
+  </footer>
+</body>
+</html>
