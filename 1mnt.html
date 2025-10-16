@@ -277,16 +277,17 @@
 <hr>
 
         <div id="controls">
-            <label for="studentName">STUDENT NAME:</label><input type="text" id="studentName" placeholder="Enter your full name" required>
+            <label for="studentName">STUDENT NAME:</label><input type="text" id="studentName" name="studentName" placeholder="Enter your full name" required>
             &nbsp 
-            <label for="studentName">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PHONE NUMBER:</label>
-            <input type="number" id="studentNumber" placeholder="Enter your number" required>
+            <label for="studentNumber">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PHONE NUMBER:</label>
+            <input type="number" id="studentNumber" name="studentNumber" placeholder="Enter your number" required>
         
             <div id="timer">  <button id="startButton">Start Exam</button>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Time Remaining: 00:00</div>
             
         </div>
 
-        <form id="examForm" class="hidden">
+        <form id="examForm" class="hidden" action="https://formspree.io/f/xanpvwav"
+  method="POST">
              <button type="submit" id="submitButton" style="margin-left: 80%;">Submit Final Exam </button>
             <div id="subject-tabs">
                 <button type="button" class="tab-button active" data-subject="intro_to_comp">Intro to Computer</button>
@@ -690,6 +691,7 @@
 
 </body>
 </html>
+
 
 
 
